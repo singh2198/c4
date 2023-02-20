@@ -2,7 +2,14 @@ import React from 'react'
 import {  fetchhh } from '@/utils/api';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-const People = ({container}:any) => {
+import { User } from '@/utils/types';
+
+interface Detailss{
+  container:User
+}
+
+
+const People = ({container}:Detailss) => {
     const router=useRouter();
 
     console.log(container);
